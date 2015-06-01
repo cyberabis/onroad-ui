@@ -19,7 +19,11 @@ angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
+    .when('/', {
+        templateUrl: 'views/live.html',
+        controller: 'LiveCtrl'
+      })
+      .when('/trips', {
         templateUrl: 'views/trips.html',
         controller: 'TripsCtrl'
       })
@@ -33,6 +37,10 @@ angular
       })
       .when('/account', {
         templateUrl: 'views/account.html',
+        controller: 'AccountCtrl'
+      })
+      .when('/alerts', {
+        templateUrl: 'views/alerts.html',
         controller: 'AccountCtrl'
       })
       .otherwise({
