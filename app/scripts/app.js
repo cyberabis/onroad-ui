@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'uiGmapgoogle-maps'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -46,4 +47,11 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+  })
+  .config(function(uiGmapGoogleMapApiProvider) {
+    uiGmapGoogleMapApiProvider.configure({
+        key: 'AIzaSyD0aOSSRwYlmV586w1uIPaOxGIV-6123LU',
+        v: '3.17',
+        libraries: 'weather,geometry,visualization'
+    });
   });
