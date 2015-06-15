@@ -1,5 +1,5 @@
 html {
-	height:88%;
+	height:92%;
 }
 
 body, .tm-partials, .tm-live-map-row, .tm-live-map-col {
@@ -11,4 +11,13 @@ body, .tm-partials, .tm-live-map-row, .tm-live-map-col {
     height: 100%;
     width: 100%;
     position: absolute;
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+.tm-partials {
+	padding-right: 0px;
+  	padding-left: 0px;
 }

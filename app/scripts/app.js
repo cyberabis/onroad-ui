@@ -24,6 +24,10 @@ angular
         templateUrl: 'views/live.html',
         controller: 'LiveCtrl'
       })
+      .when('/metrics', {
+        templateUrl: 'views/metrics.html',
+        controller: 'MetricsCtrl'
+      })
       .when('/trips', {
         templateUrl: 'views/trips.html',
         controller: 'TripsCtrl'
