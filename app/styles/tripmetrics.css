@@ -2,7 +2,7 @@ html {
 	height:92%;
 }
 
-body, .tm-partials, .tm-live-map-row, .tm-live-map-col {
+body, .tm-partials, .tm-live-map {
     height: 100%;
     width: 100%;
 }
@@ -17,7 +17,28 @@ body, .tm-partials, .tm-live-map-row, .tm-live-map-col {
 	margin-bottom: 0px;
 }
 
-.tm-partials {
+/*
+.tm-live-container {
 	padding-right: 0px;
   	padding-left: 0px;
+}
+*/
+
+.badge {
+	background-color: #D50000;
+}
+
+.dropdown-toggle {
+	cursor: pointer;
+}
+
+
+.tm-live-map {
+	z-index: 1;
+	position: fixed;
+}
+
+.tm-live-container {
+	z-index: 2;
+	position: relative;
 }
