@@ -42,3 +42,7 @@ body, .tm-partials, .tm-live-map {
 	z-index: 2;
 	position: relative;
 }
+
+.tm-live-search {
+	opacity: 0.75
+}
