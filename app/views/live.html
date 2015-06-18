@@ -1,7 +1,14 @@
+<script type="text/ng-template" id="typeaheadElement.html">
+  <a>
+      <span bind-html-unsafe="match.label | typeaheadHighlight:query"></span>
+      <p><small>Location</small></p>
+  </a>
+</script>
 <div class="container-fluid">
 	<div class="row">
-		<div class="input-group tm-live-search">
-	      <input type="text" class="form-control" placeholder="Search for Location / Vehicle ID / Driver Name">
+		<div class="input-group">
+	      <!--<input type="text" class="form-control" placeholder="Search for Location / Vehicle ID / Driver Name">-->
+	      <input type="text" ng-model="searchTerm" placeholder="Search for Location / Vehicle ID / Driver Name" typeahead="term as term.name for term in matchingTerms | filter:{name:$viewValue}" typeahead-template-url="typeaheadElement.html" class="form-control">
 	      <span class="input-group-btn">
 	        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
 	      </span>

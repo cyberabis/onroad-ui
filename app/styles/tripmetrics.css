@@ -34,17 +34,13 @@ body, .tm-partials, .tm-live-map {
 
 
 .tm-live-map {
-	z-index: 1;
+	z-index: -1;
 	position: fixed;
 }
 
 .tm-live-container {
-	z-index: 2;
+	z-index: 1;
 	position: relative;
-}
-
-.tm-live-search {
-	opacity: 0.75
 }
 
 .tm-tab {
