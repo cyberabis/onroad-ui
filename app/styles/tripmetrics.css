@@ -25,7 +25,7 @@ body, .tm-partials, .tm-live-map {
 */
 
 .badge {
-	background-color: #D50000;
+	background-color: #FF5252;
 }
 
 .dropdown-toggle {
@@ -45,4 +45,29 @@ body, .tm-partials, .tm-live-map {
 
 .tm-live-search {
 	opacity: 0.75
+}
+
+.tm-tab {
+	border-bottom: Solid;
+	border-bottom-color: WhiteSmoke;
+	border-left: Solid;
+	border-right: Solid;
+	border-left-color: WhiteSmoke;
+	border-right-color: WhiteSmoke;
+	border-bottom-width: 2px;
+	border-left-width: 1px;
+	border-right-width: 1px;
+	height: 35px;
+	display: flex;
+	justify-content: center; 
+	align-items: center; 
+	color: #424242;
+}
+
+.tm-tab-active {
+	border-bottom-color: #FF5252;
+}
+
+.tm-tab > span {
+	font-weight: bold;
 }

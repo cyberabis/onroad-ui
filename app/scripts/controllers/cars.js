@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name onroadApp.controller:FleetCtrl
+ * @name onroadApp.controller:CarsCtrl
  * @description
- * # FleetCtrl
+ * # CarsCtrl
  * Controller of the onroadApp
  */
 angular.module('onroadApp')
-  .controller('FleetCtrl', function ($scope) {
+  .controller('CarsCtrl', function ($scope) {
 
   });
