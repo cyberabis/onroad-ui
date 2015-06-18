@@ -9,6 +9,7 @@
  */
 angular.module('onroadApp')
   .controller('LiveCtrl', function ($scope, uiGmapGoogleMapApi) {
+  	$scope.$parent.routeSelection = 'live';
 
   	// uiGmapGoogleMapApi is a promise.
     // The "then" callback function provides the google.maps object.

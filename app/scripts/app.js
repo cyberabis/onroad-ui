@@ -42,7 +42,7 @@ angular
       })
       .when('/alerts', {
         templateUrl: 'views/alerts.html',
-        controller: 'AccountCtrl'
+        controller: 'AlertsCtrl'
       })
       .otherwise({
         redirectTo: '/'

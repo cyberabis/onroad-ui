@@ -9,5 +9,5 @@
  */
 angular.module('onroadApp')
   .controller('DriversCtrl', function ($scope) {
-
+  	$scope.$parent.routeSelection = 'metrics';
   });

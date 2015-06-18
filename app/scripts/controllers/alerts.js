@@ -9,6 +9,6 @@
  */
 angular.module('onroadApp')
   .controller('AlertsCtrl', function ($scope) {
-
+	$scope.$parent.routeSelection = 'alerts';
 
   });
