@@ -5,6 +5,7 @@ html {
 body, .tm-partials, .tm-live-map {
     height: 100%;
     width: 100%;
+    font-family: 'Roboto Slab',sans-serif;
 }
 
 .angular-google-map-container {
@@ -17,12 +18,6 @@ body, .tm-partials, .tm-live-map {
 	margin-bottom: 0px;
 }
 
-/*
-.tm-live-container {
-	padding-right: 0px;
-  	padding-left: 0px;
-}
-*/
 
 .badge {
 	background-color: #FF5252;
@@ -38,10 +33,33 @@ body, .tm-partials, .tm-live-map {
 	position: fixed;
 }
 
-.tm-live-container {
-	z-index: -1;
-	position: relative;
+.tm-live-overlay {
+	z-index: 1;
+  	position: absolute;
+  	bottom: 0;
+  	width: 100%;
+  	height: 20%;
 }
+
+.tm-overlay-unit {
+	color: #424242;
+}
+
+.tm-live-summary {
+	background-color: White;
+	opacity: 0.75;
+	padding:5px;
+}
+
+.tm-live-today {
+	margin-bottom: 0px;
+}
+
+.tm-live-distance {
+	margin-top: 5px;
+}
+
+/* FOR METRICS */
 
 .tm-tab {
 	border-bottom: Solid;
@@ -63,4 +81,3 @@ body, .tm-partials, .tm-live-map {
 .tm-tab-active {
 	border-bottom-color: #FF5252;
 }
-

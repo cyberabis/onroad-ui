@@ -11,7 +11,10 @@ angular.module('onroadApp')
   .controller('LiveCtrl', function ($scope, uiGmapGoogleMapApi) {
   	$scope.$parent.routeSelection = 'live';
   	$scope.searchTerm = undefined;
-  	$scope.matchingTerms = [{'name':'Alabama'}, {'name':'Angalaman'}];
+  	$scope.matchingTerms = [{'name':'Ramanathapuram, Coimbatore'}, {'name':'RS Puram, Coimbatore'}, {'name':'Saibaba Colony, Coimbatore'}];
+  	$scope.distanceCovered = '5.6k';
+  	$scope.activeCabs = '120';
+  	$scope.totalCabs = '153';
 
   $scope.addAlert = function() {
     $scope.alerts.push({msg: 'Another alert!'});
