@@ -13,8 +13,8 @@ angular.module('onroadApp')
   	$scope.searchTerm = undefined;
   	$scope.matchingTerms = [{'name':'Ramanathapuram, Coimbatore'}, {'name':'RS Puram, Coimbatore'}, {'name':'Saibaba Colony, Coimbatore'}];
   	$scope.distanceCovered = '5.6k';
-  	$scope.activeCabs = '120';
-  	$scope.totalCabs = '153';
+  	$scope.activeCabs = '43';
+  	$scope.idleCabs = '25';
 
   $scope.addAlert = function() {
     $scope.alerts.push({msg: 'Another alert!'});
