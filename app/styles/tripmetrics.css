@@ -90,3 +90,7 @@ body, .tm-partials, .tm-live-map {
 	font-style: italic;
 	padding: 1px;
 }
+
+.tm-trips-chart {
+	height: 200px;
+}
