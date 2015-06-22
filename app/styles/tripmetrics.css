@@ -81,3 +81,7 @@ body, .tm-partials, .tm-live-map {
 .tm-tab-active {
 	border-bottom-color: #FF5252;
 }
+
+.glyphicon-arrow-up {
+	color: #689F38;
+}
