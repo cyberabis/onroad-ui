@@ -26,28 +26,63 @@ angular.module('onroadApp')
   	// uiGmapGoogleMapApi is a promise.
     // The "then" callback function provides the google.maps object.
     uiGmapGoogleMapApi.then(function(maps) {
-    	$scope.map = { center: { latitude: 11, longitude: 77 }, zoom: 12 };
+    	$scope.map = { center: { latitude: 11, longitude: 77 }, zoom: 13 };
 
     	$scope.cars = {
     		models: [
-	    		{latitude: 11.055,
-		        longitude: 77.055,
-		        title: 'c1',
-		    	id: 1},
-		        {latitude: 11,
-		        longitude: 76.95,
-		        title: 'c2',
-		    	id: 2},
-		        {latitude: 11,
-		        longitude: 77,
-		        title: 'c3',
-		    	id: 3},
-		    	{latitude: 10.95,
-		        longitude: 77,
-		        title: 'c4',
-		    	id: 4}
+	    		{
+	    			latitude: 11.04,
+			        longitude: 77.04,
+			        title: 'c1',
+			    	id: 1,
+			    	options: {
+			    		labelContent: 'car #1', 
+			    		labelClass: 'tm-marker-label',
+			    		icon: 'images/car-moving.png'
+			    	}
+			    },
+		        {
+		        	latitude: 11,
+			        longitude: 76.95,
+			        title: 'c2',
+			    	id: 2,
+			    	options: {
+			    		labelContent: 'car #2', 
+			    		labelClass: 'tm-marker-label',
+			    		icon: 'images/car-parked.png'
+			    	}
+			    },
+		        {
+		        	latitude: 11,
+			        longitude: 77,
+			        title: 'c3',
+			    	id: 3,
+			    	options: {
+			    		labelContent: 'car #3', 
+			    		labelClass: 'tm-marker-label',
+			    		icon: 'images/car-moving.png'
+			    	}
+			    },
+		    	{
+		    		latitude: 10.975,
+			        longitude: 77,
+			        title: 'c4',
+			    	id: 4,
+			    	options: {
+			    		labelContent: 'car #4', 
+			    		labelClass: 'tm-marker-label',
+			    		icon: 'images/car-parked.png'
+			    	}
+			    }
 	    	],
-	    	options: {icon: 'images/car-front.png'}
+	    	/*options: {
+	    		icon: 'images/car-front.png'
+	    	},*/
+	    	events: {
+	    		mouseover: function (marker, eventName, model, args) {
+	    			console.log('car pointed: ' + model.title);
+	    		}
+	    	}
 	    };
 
 	    /* Single marker

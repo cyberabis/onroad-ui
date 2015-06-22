@@ -85,3 +85,8 @@ body, .tm-partials, .tm-live-map {
 .glyphicon-arrow-up {
 	color: #689F38;
 }
+
+.tm-marker-label {
+	font-style: italic;
+	padding: 1px;
+}
