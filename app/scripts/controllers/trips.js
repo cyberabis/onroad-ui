@@ -64,7 +64,7 @@ angular.module('onroadApp')
         },
         yAxis: {
             title: {
-                text: 'Event count'
+                text: 'Kilometers'
             }
         },
         size: {
