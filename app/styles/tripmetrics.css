@@ -89,6 +89,10 @@ hr {
 	color: LightCoral;
 }
 
+.tm-search-group {
+	background-color: LightGray;
+}
+
 /* FOR TRIP METRICS */
 
 .tm-tab {
@@ -159,7 +163,7 @@ hr {
 .tm-card {
 	border: Solid;
 	border-width: 2px;
-	border-color: WhiteSmoke;
+	border-color: #EFEBE9;
 	background-color: #EFEBE9;
 	padding: 10px;
 	margin: 10px;
@@ -172,11 +176,11 @@ hr {
 }
 
 .btn-info {
-	background-color: #795548;
-	border-color: #795548;
+	background-color: LightCoral;
+	border-color: LightCoral;
 }
 
 .btn-info:hover {
-	background-color: #6D4C41;
-	border-color: #6D4C41;
+	background-color: #D87373;
+	border-color: #D87373;
 }

@@ -6,7 +6,7 @@
 </script>
 <div class="container-fluid">
 	<div class="row">
-		<div class="input-group">
+		<div class="input-group tm-search-group">
 	      <!--<input type="text" class="form-control" placeholder="Search for Location / Vehicle ID / Driver Name">-->
 	      <input type="text" ng-model="searchTerm" placeholder="Search for Location / Vehicle ID / Driver Name" typeahead="term as term.name for term in matchingTerms | filter:{name:$viewValue}" typeahead-template-url="typeaheadElement.html" class="form-control">
 	      <span class="input-group-btn">

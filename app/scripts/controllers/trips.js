@@ -42,7 +42,7 @@ angular.module('onroadApp')
     $scope.tripsChartConfig = {
         options: {
             chart: {
-                type: 'spline',
+                type: 'line',
             	zoomType: 'x'
             },
 	        legend: {
