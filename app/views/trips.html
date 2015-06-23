@@ -46,7 +46,7 @@
 		<div class="col-xs-12 col-md-4 tm-trip-summary">
 			<br/>
 			<h5 class="tm-heading"><span class="glyphicon glyphicon-chevron-right"></span> Statistics</h5>
-			<small>Jul 21, 2015 upto Now</small>
+			<small>Jun 21, 2015 upto Now</small>
 			<hr/>
 			<h3>5623 km <small> (+353) <span class="glyphicon glyphicon-arrow-up"></small></h3>
 			<h4>120 trips</h4>
@@ -55,24 +55,31 @@
 		</div>
 	</div>
 	<br/>
-
-	<div class="row" class="">
+	<div class="row">
 		<div class="col-xs-12">
 			<h5 class="tm-heading"><span class="glyphicon glyphicon-chevron-right"></span> Recent Trips</h5>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-xs-12 col-md-6 tm-card-wrap">
-			<div class="tm-card">I am in a card!</div>
-		</div>
-		<div class="col-xs-12 col-md-6 tm-card-wrap">
-			<div class="tm-card">I am in a card!</div>
-		</div>
-		<div class="col-xs-12 col-md-6 tm-card-wrap">
-			<div class="tm-card">I am in a card!</div>
-		</div>
-		<div class="col-xs-12 col-md-6 tm-card-wrap">
-			<div class="tm-card">I am in a card!</div>
+		<div class="col-xs-12 col-md-6 tm-card-wrap" ng-repeat="trip in recentTrips">
+			<div class="tm-card" ng-click="cardClicked()">
+				<div class="row">
+					<div class="col-xs-3">
+						<h4>#{{trip.carID}}</h4>
+						<small>Car ID</small>
+					</div>
+					<div class="col-xs-3">
+						<h4>{{trip.score == null? 'NR' : trip.score}}</h4>
+						<small>Trip Score</small>
+					</div>
+					<div class="col-xs-6">
+						<h4 class="text-right">{{trip.distance}} kms, {{trip.duration}} min</h4>
+						<p class="text-right"><small>{{trip.startTime}}</small></p>
+					</div>
+				</div>
+				<hr/>
+				<p>{{trip.from}} > {{trip.to}}</p>
+			</div>
 		</div>
 	</div>
 	<br/>

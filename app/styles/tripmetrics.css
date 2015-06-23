@@ -31,6 +31,10 @@ body, .tm-partials, .tm-live-map {
 	font-weight: bold;
 }
 
+hr {
+	border-color: LightGray;
+}
+
 
 /* FOR LIVE VIEW */
 
@@ -134,7 +138,7 @@ body, .tm-partials, .tm-live-map {
 }
 
 .tm-trip-summary {
-	background-color: WhiteSmoke;
+	background-color: #EFEBE9;
 }
 
 /*
@@ -153,9 +157,26 @@ body, .tm-partials, .tm-live-map {
 }
 
 .tm-card {
-	background-color: WhiteSmoke;
+	border: Solid;
+	border-width: 2px;
+	border-color: WhiteSmoke;
+	background-color: #EFEBE9;
 	padding: 10px;
 	margin: 10px;
+	box-shadow: 2px 2px 1px LightGray;
+	cursor: pointer;
+}
+
+.tm-card:hover {
 	box-shadow: 3px 3px 2px LightGray;
 }
 
+.btn-info {
+	background-color: #795548;
+	border-color: #795548;
+}
+
+.btn-info:hover {
+	background-color: #6D4C41;
+	border-color: #6D4C41;
+}
