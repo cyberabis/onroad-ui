@@ -147,6 +147,11 @@ body, .tm-partials, .tm-live-map {
 }
 */
 
+.tm-card-wrap {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
 .tm-card {
 	background-color: WhiteSmoke;
 	padding: 10px;
@@ -154,6 +159,3 @@ body, .tm-partials, .tm-live-map {
 	box-shadow: 3px 3px 2px LightGray;
 }
 
-.tm-more-trips {
-	margin-left:10px;
-}
