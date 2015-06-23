@@ -153,3 +153,7 @@ body, .tm-partials, .tm-live-map {
 	margin: 10px;
 	box-shadow: 3px 3px 2px LightGray;
 }
+
+.tm-more-trips {
+	margin-left:10px;
+}
