@@ -37,14 +37,17 @@ angular.module('onroadApp')
     };
     */
 
-    var distances = [[1419716700000,1627.0], [1419717000000,1701.0], [1419717300000,1591.0], [1419717600000,1756.0], [1419717900000,1716.0], [1419718200000,1630.0], [1419718500000,1563.0]];
+    var distances = [[1419716700000,1627.0], [1419717000000,1701.0], [1419717300000,1591.0], [1419717600000,1756.0], [1419717900000,1716.0], [1419718200000,1830.0], [1419718500000,1863.0]];
 
     $scope.tripsChartConfig = {
         options: {
             chart: {
-                type: 'line',
+                type: 'spline',
             	zoomType: 'x'
-            }
+            },
+	        legend: {
+	            enabled: false
+	        }
         },
         title: {
             text: ''
@@ -53,13 +56,13 @@ angular.module('onroadApp')
             {
                 name: 'Distance Convered',
                 data: distances,
-                color: 'SteelBlue'
+                color: 'LightCoral'
             }
         ],
         xAxis: {
             type: 'datetime',
             title: {
-                text: 'Time'
+                text: ''
             }
         },
         yAxis: {
@@ -70,7 +73,10 @@ angular.module('onroadApp')
         size: {
            height: 250
         }, 
-        loading: false
+        loading: false,
+        size: {
+        	height: 150
+        }
     }
 
   });

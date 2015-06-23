@@ -1,27 +1,78 @@
-<div class="row">
-	<a href="#/trips">
-		<div class="col-xs-4 tm-tab tm-tab-active">
-			<span>Trips</span>
-		</div>
-	</a>
-	<a href="#/cars">
-		<div class="col-xs-4 tm-tab">
-			<span>Cars</span>
-		</div>
-	</a>
-	<a href="#/drivers">
-		<div class="col-xs-4 tm-tab">
-			<span>Drivers</span>
-		</div>
-	</a>
-</div>
-<br/>
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-xs-12">
-			<h5>Trips Summary</h5>
+		<a href="#/trips">
+			<div class="col-xs-4 tm-tab tm-tab-active">
+				<span>Trips</span>
+			</div>
+		</a>
+		<a href="#/cars">
+			<div class="col-xs-4 tm-tab">
+				<span>Cars</span>
+			</div>
+		</a>
+		<a href="#/drivers">
+			<div class="col-xs-4 tm-tab">
+				<span>Drivers</span>
+			</div>
+		</a>
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12 col-md-8 tm-trips-chart">
 			<br/>
-			<highchart id="tripsChart" config="tripsChartConfig" class="tm-trips-chart"></highchart>
+			<h5 class="tm-heading"><span class="glyphicon glyphicon-chevron-right"></span> Trips Summary</h5>
+			<br/>
+				<div class="row">
+					<a href="#/trips">
+						<div class="col-xs-4 tm-summary-tab tm-summary-tab-active">
+							<span>Daily</span>
+						</div>
+					</a>
+					<a href="#/cars">
+						<div class="col-xs-4 tm-summary-tab">
+							<span>Monthly</span>
+						</div>
+					</a>
+					<a href="#/drivers">
+						<div class="col-xs-4 tm-summary-tab">
+							<span>Yearly</span>
+						</div>
+					</a>
+				</div>
+			<br/>
+			<highchart id="tripsChart" config="tripsChartConfig"></highchart>
+		</div>
+		<div class="col-xs-12 col-md-4 tm-trip-summary">
+			<br/>
+			<h5 class="tm-heading"><span class="glyphicon glyphicon-chevron-right"></span> Statistics</h5>
+			<small>Jul 21, 2015 upto Now</small>
+			<hr/>
+			<h3>5623 km <small> (+353) <span class="glyphicon glyphicon-arrow-up"></small></h3>
+			<h4>120 trips</h4>
+			<h4>82% running | 18% idle</h4>		
+			<br/><br/>
+		</div>
+	</div>
+	<br/>
+
+	<div class="row" class="">
+		<div class="col-xs-12">
+			<h5 class="tm-heading"><span class="glyphicon glyphicon-chevron-right"></span> Recent Trips</h5>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-md-6">
+			<div class="tm-card">I am in a card!</div>
+		</div>
+		<div class="col-xs-12 col-md-6">
+			<div class="tm-card">I am in a card!</div>
+		</div>
+		<div class="col-xs-12 col-md-6">
+			<div class="tm-card">I am in a card!</div>
+		</div>
+		<div class="col-xs-12 col-md-6">
+			<div class="tm-card">I am in a card!</div>
 		</div>
 	</div>
 </div>

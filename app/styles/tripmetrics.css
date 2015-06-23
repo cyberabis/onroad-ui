@@ -1,3 +1,5 @@
+/* GENERAL */
+
 html {
 	height:92%;
 }
@@ -8,23 +10,34 @@ body, .tm-partials, .tm-live-map {
     font-family: 'Roboto Slab',sans-serif;
 }
 
-.angular-google-map-container {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-}
-
 .navbar {
 	margin-bottom: 0px;
 }
 
 
 .badge {
-	background-color: #FF5252;
+	background-color: LightCoral;
 }
 
 .dropdown-toggle {
 	cursor: pointer;
+}
+
+.tm-logo {
+	height: 24px;
+}
+
+.tm-heading {
+	font-weight: bold;
+}
+
+
+/* FOR LIVE VIEW */
+
+.angular-google-map-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 
@@ -59,7 +72,20 @@ body, .tm-partials, .tm-live-map {
 	margin-top: 5px;
 }
 
-/* FOR METRICS */
+.tm-marker-label {
+	font-style: italic;
+	padding: 1px;
+}
+
+.glyphicon-arrow-up {
+	color: #689F38;
+}
+
+.glyphicon-arrow-down {
+	color: LightCoral;
+}
+
+/* FOR TRIP METRICS */
 
 .tm-tab {
 	border-bottom: Solid;
@@ -79,18 +105,51 @@ body, .tm-partials, .tm-live-map {
 }
 
 .tm-tab-active {
-	border-bottom-color: #FF5252;
+	border-bottom-color: LightCoral;
 }
 
-.glyphicon-arrow-up {
-	color: #689F38;
+.tm-summary-tab {
+	border-top-width: 0px;
+	border-bottom: Solid;
+	border-bottom-color: LightGray;
+	border-bottom-width: 1px;
+	height: 30px;
+	display: flex;
+	justify-content: center; 
+	align-items: center; 
+	color: #424242;
 }
 
-.tm-marker-label {
-	font-style: italic;
-	padding: 1px;
+.tm-summary-tab-active {
+	border-bottom-width: 0px;
+	border-top: Solid;
+	border-top-color:  LightGray;
+	border-top-width: 1px;
+	border-left: Solid;
+	border-left-color:  LightGray;
+	border-left-width: 1px;
+	border-right: Solid;
+	border-right-color:  LightGray;
+	border-right-width: 1px;
 }
 
-.tm-trips-chart {
-	height: 200px;
+.tm-trip-summary {
+	background-color: WhiteSmoke;
+}
+
+/*
+.tm-card {
+	background-color: WhiteSmoke;
+	padding: 20px;
+	border: Solid;
+	border-width: 10px;
+	border-color: White;
+}
+*/
+
+.tm-card {
+	background-color: WhiteSmoke;
+	padding: 10px;
+	margin: 10px;
+	box-shadow: 3px 3px 2px LightGray;
 }
