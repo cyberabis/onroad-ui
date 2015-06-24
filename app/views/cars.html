@@ -17,3 +17,87 @@
 		</a>
 	</div>
 </div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12 col-md-8 tm-trips-chart">
+			<br/>
+			<h5 class="tm-heading"><span class="glyphicon glyphicon-chevron-right"></span> Cars Summary</h5>
+			<br/>
+				<div class="row">
+					<a href="#/trips">
+						<div class="col-xs-4 tm-summary-tab tm-summary-tab-active">
+							<span>Daily</span>
+						</div>
+					</a>
+					<a href="#/cars">
+						<div class="col-xs-4 tm-summary-tab">
+							<span>Monthly</span>
+						</div>
+					</a>
+					<a href="#/drivers">
+						<div class="col-xs-4 tm-summary-tab">
+							<span>Yearly</span>
+						</div>
+					</a>
+				</div>
+			<br/>
+			<highchart id="carsChart" config="carsChartConfig"></highchart>
+		</div>
+		<div class="col-xs-12 col-md-4 tm-car-summary">
+			<br/>
+			<h5 class="tm-heading"><span class="glyphicon glyphicon-chevron-right"></span> Statistics</h5>
+			<small>Jun 21, 2015 upto Now</small>
+			<hr/>
+			<div class="row">
+				<div class="col-xs-6">
+					<center>
+						<h2>58 cars<small> (-4) <span class="glyphicon glyphicon-arrow-down"></small></h2>
+						<small>70 licences</small>
+					</center>
+				</div>
+				<div class="col-xs-6">
+					<center>
+						<h2><span class="glyphicon glyphicon-heart tm-good-health"></span></h2>
+						<small>Health</small>
+					</center>
+				</div>
+			</div>
+			<br/><br/>
+		</div>
+	</div>
+	<br/>
+	<div class="row">
+		<div class="col-xs-12">
+			<h5 class="tm-heading"><span class="glyphicon glyphicon-chevron-right"></span> Recent Trips</h5>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-md-6 tm-card-wrap" ng-repeat="trip in recentTrips">
+			<div class="tm-card" ng-click="cardClicked()">
+				<div class="row">
+					<div class="col-xs-3">
+						<h4>#{{trip.carID}}</h4>
+						<small>Car ID</small>
+					</div>
+					<div class="col-xs-3">
+						<h4>{{trip.score == null? 'NR' : trip.score}}</h4>
+						<small>Trip Score</small>
+					</div>
+					<div class="col-xs-6">
+						<h4 class="text-right">{{trip.distance}} kms, {{trip.duration}} min</h4>
+						<p class="text-right"><small>{{trip.startTime}}</small></p>
+					</div>
+				</div>
+				<hr/>
+				<p>{{trip.from}} > {{trip.to}}</p>
+			</div>
+		</div>
+	</div>
+	<br/>
+	<div class="row">
+		<div class="col-xs-12">
+			<button type="button" class="btn btn-info btn-sm">More Trips</button>
+		</div>
+	</div>
+	<br/>
+</div>

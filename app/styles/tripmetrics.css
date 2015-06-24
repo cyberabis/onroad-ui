@@ -184,3 +184,13 @@ hr {
 	background-color: #D87373;
 	border-color: #D87373;
 }
+
+/* FOR TRIP METRICS */
+
+.tm-good-health {
+	color: #689F38;
+}
+
+.tm-car-summary {
+	background-color: #ECEFF1;
+}

@@ -56,7 +56,7 @@ angular.module('onroadApp')
             {
                 name: 'Distance Convered',
                 data: distances,
-                color: 'LightCoral'
+                color: '#795548'
             }
         ],
         xAxis: {
