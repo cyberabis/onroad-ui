@@ -36,7 +36,7 @@ angular.module('onroadApp')
 			        title: 'c1',
 			    	id: 1,
 			    	options: {
-			    		labelContent: 'car #1', 
+			    		labelContent: '#53', 
 			    		labelClass: 'tm-marker-label',
 			    		icon: 'images/car-moving.png'
 			    	}
@@ -47,7 +47,7 @@ angular.module('onroadApp')
 			        title: 'c2',
 			    	id: 2,
 			    	options: {
-			    		labelContent: 'car #2', 
+			    		labelContent: '#62', 
 			    		labelClass: 'tm-marker-label',
 			    		icon: 'images/car-parked.png'
 			    	}
@@ -58,7 +58,7 @@ angular.module('onroadApp')
 			        title: 'c3',
 			    	id: 3,
 			    	options: {
-			    		labelContent: 'car #3', 
+			    		labelContent: '#18', 
 			    		labelClass: 'tm-marker-label',
 			    		icon: 'images/car-moving.png'
 			    	}
@@ -69,7 +69,7 @@ angular.module('onroadApp')
 			        title: 'c4',
 			    	id: 4,
 			    	options: {
-			    		labelContent: 'car #4', 
+			    		labelContent: '#27', 
 			    		labelClass: 'tm-marker-label',
 			    		icon: 'images/car-parked.png'
 			    	}

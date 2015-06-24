@@ -10,6 +10,8 @@
 angular.module('onroadApp')
   .controller('CarsCtrl', function ($scope) {
   	$scope.$parent.routeSelection = 'metrics';
+  	$scope.searchTerm = undefined;
+  	$scope.matchingTerms = [{'name':'#53'}, {'name':'#62'}, {'name':'#18'}, {'name':'#27'}];
 
   	var carCount = [[1419716700000,45], [1419717000000,45], [1419717300000,40], [1419717600000,25], [1419717900000,28], [1419718200000,62], [1419718500000,58]];
 

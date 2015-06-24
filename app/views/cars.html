@@ -1,3 +1,9 @@
+<script type="text/ng-template" id="typeaheadCarElement.html">
+  <a>
+      <span bind-html-unsafe="match.label"></span>
+      <p><small>Car</small></p>
+  </a>
+</script>
 <div class="container-fluid">
 	<div class="row">
 		<a href="#/trips">
@@ -50,16 +56,12 @@
 			<hr/>
 			<div class="row">
 				<div class="col-xs-6">
-					<center>
 						<h2>58 cars<small> (-4) <span class="glyphicon glyphicon-arrow-down"></small></h2>
 						<small>70 licences</small>
-					</center>
 				</div>
 				<div class="col-xs-6">
-					<center>
 						<h2><span class="glyphicon glyphicon-heart tm-good-health"></span></h2>
 						<small>Health</small>
-					</center>
 				</div>
 			</div>
 			<br/><br/>
@@ -68,36 +70,23 @@
 	<br/>
 	<div class="row">
 		<div class="col-xs-12">
-			<h5 class="tm-heading"><span class="glyphicon glyphicon-chevron-right"></span> Recent Trips</h5>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-xs-12 col-md-6 tm-card-wrap" ng-repeat="trip in recentTrips">
-			<div class="tm-card" ng-click="cardClicked()">
-				<div class="row">
-					<div class="col-xs-3">
-						<h4>#{{trip.carID}}</h4>
-						<small>Car ID</small>
-					</div>
-					<div class="col-xs-3">
-						<h4>{{trip.score == null? 'NR' : trip.score}}</h4>
-						<small>Trip Score</small>
-					</div>
-					<div class="col-xs-6">
-						<h4 class="text-right">{{trip.distance}} kms, {{trip.duration}} min</h4>
-						<p class="text-right"><small>{{trip.startTime}}</small></p>
-					</div>
-				</div>
-				<hr/>
-				<p>{{trip.from}} > {{trip.to}}</p>
-			</div>
+			<h5 class="tm-heading"><span class="glyphicon glyphicon-chevron-right"></span> Search Cars</h5>
+			<br/>
+			<div class="input-group">
+		      <!--<input type="text" class="form-control" placeholder="Search for Location / Vehicle ID / Driver Name">-->
+		      <input type="text" ng-model="searchTerm" placeholder="Search by Car #" typeahead="term as term.name for term in matchingTerms | filter:{name:$viewValue}" typeahead-template-url="typeaheadCarElement.html" class="form-control">
+		      <span class="input-group-btn">
+		        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+		      </span>
+		    </div><!-- /input-group -->
 		</div>
 	</div>
 	<br/>
 	<div class="row">
-		<div class="col-xs-12">
-			<button type="button" class="btn btn-info btn-sm">More Trips</button>
+		<div class="col-xs-12 col-md-6">
+			<p class="text-muted">Recently searched</p>
+			<p>NA.</p>
 		</div>
 	</div>
-	<br/>
+	<br/><br/><br/>
 </div>
