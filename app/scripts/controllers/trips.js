@@ -77,11 +77,11 @@ angular.module('onroadApp')
         size: {
         	height: 150
         }
-    }
+    };
 
     $scope.cardClicked = function(){
     	console.log('Card Clicked!');
-    }
+    };
 
     $scope.recentTrips = [
 		{

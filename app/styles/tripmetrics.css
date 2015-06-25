@@ -93,6 +93,10 @@ hr {
 	background-color: LightGray;
 }
 
+.tm-marker-img {
+	height:40px;
+}
+
 /* FOR TRIP METRICS */
 
 .tm-tab {
@@ -217,4 +221,10 @@ hr {
 
 .tm-car-card:hover {
 	box-shadow: 3px 3px 2px LightGray;
+}
+
+/* FOR ALERTS */
+
+.tm-alerts-summary {
+	background-color: WhiteSmoke;
 }
