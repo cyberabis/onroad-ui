@@ -194,3 +194,12 @@ hr {
 .tm-car-summary {
 	background-color: #ECEFF1;
 }
+
+.tm-marker {
+	padding-top: 20px;
+}
+
+.tm-marker:hover {
+	opacity: 0.60;
+	cursor: pointer;
+}

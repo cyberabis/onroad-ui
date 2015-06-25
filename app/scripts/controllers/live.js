@@ -85,14 +85,14 @@ angular.module('onroadApp')
 	    	}
 	    };
 
-	    /* Single marker
-	    $scope.car = {
+	    /* Single marker */
+	    $scope.marker = {
 	      id: 1,
 	      coords: {
-	        latitude: 11.05,
-	        longitude: 77.05
+	        latitude: 11.025,
+	        longitude: 77
 	      },
-	      options: { draggable: false, icon: 'images/car-front.png' },
+	      options: { draggable: true, icon: 'images/marker-small.png' },
 	      events: {
 	        dragend: function (marker, eventName, args) {
 	          console.log('car dragend');
@@ -103,7 +103,6 @@ angular.module('onroadApp')
 	        }
 	      }
 	    };
-	    */
 
     });
 
