@@ -91,17 +91,17 @@
 				<div class="col-xs-12 col-md-8 tm-card-wrap" ng-repeat="car in searchedCars">
 					<div class="tm-car-card" ng-click="cardClicked()">
 						<div class="row">
-							<div class="col-xs-4 col-md-3">
+							<div class="col-xs-3 col-md-2">
 								<h4>#{{car.id}}</h4>
 							</div>
-							<div class="col-xs-4 col-md-2">
-								<h4><span class="glyphicon glyphicon-heart tm-good-health"></span></h4>
+							<div class="col-xs-5 col-md-4">
+								<h5>{{car.distance}} km | {{car.trips}} trips <small>today</small></h5>
 							</div>
-							<div class="col-xs-4 col-md-3">
+							<div class="col-xs-2 col-md-2">
 								<h5>{{car.status}}</h5>
 							</div>
 							<div class="col-xs-12 col-md-4">
-								<h5 class="text-right">@{{car.location}}</h5>
+								<h5 >@{{car.location}}</h5>
 							</div>
 						</div>
 					</div>
