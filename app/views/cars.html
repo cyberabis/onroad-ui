@@ -74,7 +74,7 @@
 			<br/>
 			<div class="input-group">
 		      <!--<input type="text" class="form-control" placeholder="Search for Location / Vehicle ID / Driver Name">-->
-		      <input type="text" ng-model="searchTerm" placeholder="Search by Car #" typeahead="term as term.name for term in matchingTerms | filter:{name:$viewValue}" typeahead-template-url="typeaheadCarElement.html" class="form-control">
+		      <input type="text" ng-model="searchTerm" placeholder="Search by Car" typeahead="term as term.name for term in matchingTerms | filter:{name:$viewValue}" typeahead-template-url="typeaheadCarElement.html" class="form-control">
 		      <span class="input-group-btn">
 		        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
 		      </span>
@@ -84,9 +84,28 @@
 	<br/>
 	<div class="row">
 		<div class="col-xs-12 col-md-6">
-			<p class="text-muted">Recently searched</p>
-			<p>NA.</p>
+			<p class="text-muted">Search Results</p>
 		</div>
 	</div>
+	<div class="row">
+				<div class="col-xs-12 col-md-8 tm-card-wrap" ng-repeat="car in searchedCars">
+					<div class="tm-car-card" ng-click="cardClicked()">
+						<div class="row">
+							<div class="col-xs-4 col-md-3">
+								<h4>#{{car.id}}</h4>
+							</div>
+							<div class="col-xs-4 col-md-2">
+								<h4><span class="glyphicon glyphicon-heart tm-good-health"></span></h4>
+							</div>
+							<div class="col-xs-4 col-md-3">
+								<h5>{{car.status}}</h5>
+							</div>
+							<div class="col-xs-12 col-md-4">
+								<h5 class="text-right">@{{car.location}}</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 	<br/><br/><br/>
 </div>

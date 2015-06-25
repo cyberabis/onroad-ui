@@ -53,6 +53,24 @@ angular.module('onroadApp')
         size: {
         	height: 150
         }
-    }
+    };
+
+    $scope.searchedCars = [
+		{
+			id: 53,
+			status: 'Idle',
+			location: 'Ramanathapuram'
+		}, 
+		{
+			id: 62,
+			status: 'Running',
+			location: 'Saibaba Colony'
+		},
+		{
+			id: 18,
+			status: 'Idle',
+			location: 'Avinashi Road Signal'
+		}
+    ];
 
   });

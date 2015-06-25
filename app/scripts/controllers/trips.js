@@ -84,33 +84,33 @@ angular.module('onroadApp')
     }
 
     $scope.recentTrips = [
-    		{
-    			carID: 53,
-    			score: null,
-    			distance: 14,
-    			duration: 24,
-    			startTime: 'Jun 21, 2015 3:30 pm',
-    			from: 'Ramanathapuram Signal',
-    			to: 'Coimbatore Railway Junction'
-    		}, 
-    		{
-    			carID: 62,
-    			score: null,
-    			distance: 7.3,
-    			duration: 18,
-    			startTime: 'Jun 21, 2015 3:16 pm',
-    			from: 'Saibaba Colony',
-    			to: 'Nava India Busstop'
-    		},
-    		{
-    			carID: 18,
-    			score: null,
-    			distance: 5.6,
-    			duration: 20,
-    			startTime: 'Jun 21, 2015 3:10 pm',
-    			from: 'Masakalipalayam',
-    			to: 'Coimbatore Airport'
-    		}
-    	];
+		{
+			carID: 53,
+			score: null,
+			distance: 14,
+			duration: 24,
+			startTime: 'Jun 21, 2015 3:30 pm',
+			from: 'Ramanathapuram Signal',
+			to: 'Coimbatore Railway Junction'
+		}, 
+		{
+			carID: 62,
+			score: null,
+			distance: 7.3,
+			duration: 18,
+			startTime: 'Jun 21, 2015 3:16 pm',
+			from: 'Saibaba Colony',
+			to: 'Nava India Busstop'
+		},
+		{
+			carID: 18,
+			score: null,
+			distance: 5.6,
+			duration: 20,
+			startTime: 'Jun 21, 2015 3:10 pm',
+			from: 'Masakalipalayam',
+			to: 'Coimbatore Airport'
+		}
+    ];
 
   });

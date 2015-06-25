@@ -185,7 +185,7 @@ hr {
 	border-color: #D87373;
 }
 
-/* FOR TRIP METRICS */
+/* FOR CAR METRICS */
 
 .tm-good-health {
 	color: #689F38;
@@ -202,4 +202,19 @@ hr {
 .tm-marker:hover {
 	opacity: 0.60;
 	cursor: pointer;
+}
+
+.tm-car-card {
+	border: Solid;
+	border-width: 2px;
+	border-color: #ECEFF1;
+	background-color: #ECEFF1;
+	padding: 10px;
+	margin: 10px;
+	box-shadow: 2px 2px 1px LightGray;
+	cursor: pointer;
+}
+
+.tm-car-card:hover {
+	box-shadow: 3px 3px 2px LightGray;
 }
