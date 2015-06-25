@@ -203,7 +203,7 @@ hr {
 	padding-top: 20px;
 }
 
-.tm-marker:hover {
+.tm-marker-img:hover {
 	opacity: 0.60;
 	cursor: pointer;
 }
