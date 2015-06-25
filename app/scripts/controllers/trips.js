@@ -89,7 +89,7 @@ angular.module('onroadApp')
 			score: null,
 			distance: 14,
 			duration: 24,
-			startTime: 'Jun 21, 2015 3:30 pm',
+			startTime: '3 min ago',
 			from: 'Ramanathapuram Signal',
 			to: 'Coimbatore Railway Junction'
 		}, 
@@ -98,7 +98,7 @@ angular.module('onroadApp')
 			score: null,
 			distance: 7.3,
 			duration: 18,
-			startTime: 'Jun 21, 2015 3:16 pm',
+			startTime: '4 min ago',
 			from: 'Saibaba Colony',
 			to: 'Nava India Busstop'
 		},
@@ -107,7 +107,7 @@ angular.module('onroadApp')
 			score: null,
 			distance: 5.6,
 			duration: 20,
-			startTime: 'Jun 21, 2015 3:10 pm',
+			startTime: '16 min ago',
 			from: 'Masakalipalayam',
 			to: 'Coimbatore Airport'
 		}

@@ -61,21 +61,24 @@ angular.module('onroadApp')
 			status: 'Idle',
 			distance: 64,
 			trips: 3,
-			location: 'Ramanathapuram'
+			location: 'Ramanathapuram',
+			time: '15 min'
 		}, 
 		{
 			id: 62,
 			status: 'Running',
 			distance: 103,
 			trips: 6,
-			location: 'Saibaba Colony'
+			location: 'Saibaba Colony',
+			time: '6 min'
 		},
 		{
 			id: 18,
 			status: 'Idle',
 			distance: 76,
 			trips: 5,
-			location: 'Avinashi Road Signal'
+			location: 'Avinashi Road Signal',
+			time: '2 hr'
 		}
     ];
 
